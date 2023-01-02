@@ -1,0 +1,1 @@
+// problem 9 create a variable and store a number inside it write program to check whether a given variable is between 100 and 200 write program to check whether a given variable is between 100 and 200 or 400 and 500 handle edge cases

@@ -1,0 +1,34 @@
+<!-- // problem 1
+//  if the number is even and less than 15, print a if the number is even and more than 15, print b if the number is odd and less than 10, print c if the number is odd and more than 10, print d -->
+
+<!DOCTYPE html>
+<html lang="en" style="font-size: 200px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+
+    <script>
+        let a = parseInt(prompt("Enter a namber"))
+        if (a<15 && a%2==0){
+            document.write("A");
+        
+        }else if (a>15 && a%2==0){
+            document.write("B")
+
+        }else if (a%2!=0 && a<10){
+            document.write("C")
+
+        }else if (a%2!=0 && a>10){
+            document.write("D")
+        }
+        else{
+            document.write("0")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
