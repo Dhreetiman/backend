@@ -1,0 +1,47 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.whole{
+    box-shadow: 0 5px 15px 10px rgb(75, 73, 73);
+    border-radius: 20px;
+}
+
+.pokemon{
+    height: 450px;
+    width: 300px;
+    background-color: rgb(196, 217, 233);
+    text-align: center;
+    border-radius: 20px;
+}
+.img-container{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 22%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    border-radius: 800px;
+    width: 60%;
+    height: 20%;
+
+}
+.info{
+    margin-top: 25px;
+}
+.number{
+    background-color: gray;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 50px;
+
+}
+.name{
+    font-size: 22px;
+    margin-top: 10px;
+}
