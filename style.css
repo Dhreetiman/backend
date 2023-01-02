@@ -1,0 +1,131 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.about-wrapper{
+    height: 100vh;
+}
+.about-left{
+    background: #7565f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.about-left-content > div{
+    background: #a2b1f5;
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+}
+.about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+.about-img img{
+    display: block;
+    width: 200px;
+}
+.about-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.shadow::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.shadow:hover .about-img{
+    transform: translateY(-10px);
+}
+.shadow:hover::after{
+    opacity: 1;
+}
+.about-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #7f61fa;
+}
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+
+
+.about-right{
+    background: rgb(171, 171, 174);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+}
+.about-right h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.about-right h1 span{
+    color: #7070f3;
+}
+.about-right h2{
+    font-weight: 600;
+}
+.about-btns{
+    display: flex;
+    margin: 2rem 0;
+}
+
+.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-left{
+        position: relative;
+    }
+    .about-left-content{
+        position: absolute;
+        right: -50px;
+    }
+}
